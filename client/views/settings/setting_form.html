@@ -1,0 +1,45 @@
+<template name="settingForm">
+  {{#with setting}}
+    <form class="main">
+      <div class="control-group">
+        <label class="control-label" for="name">Settings set name</label>
+        <div class="controls">
+          <input name="name" type="text" value="{{name}}" placeholder="development"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="checkbox">
+          <input name="active" type="checkbox" {{#if active}}checked="checked"{{/if}}> Active
+        </label>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="mercury_url">Mercury URL</label>
+        <div class="controls">
+          <input name="mercury_url" type="text" value="{{mercury_url}}" placeholder="https://client.peytzmail.com"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="api_key">API Key</label>
+        <div class="controls">
+          <input name="api_key" type="text" value="{{api_key}}" placeholder="secret..."/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="test_email">Default test email</label>
+        <div class="controls">
+          <input name="test_email" type="text" value="{{test_email}}" placeholder="test@example.com"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="submit" value="Update settings" class="btn btn-primary submit"/>
+        </div>
+      </div>
+    </form>
+  {{/with}}
+</template>

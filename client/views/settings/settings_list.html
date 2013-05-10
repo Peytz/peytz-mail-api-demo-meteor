@@ -1,0 +1,9 @@
+<template name="settingsList">
+  <div class="settings">
+    {{#each settings}}
+      {{> settingItem}}
+    {{/each}}
+    <a class="refresh" href="{{settingFormPath 'new'}}">Create a new settings document</a>
+    <a class="remove-all" href="">Clear cached data</a>
+  </div>
+</template>

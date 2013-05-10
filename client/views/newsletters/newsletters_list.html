@@ -1,0 +1,8 @@
+<template name="newslettersList">
+  <div class="newsletters">
+    {{#each newsletters}}
+      {{> newsletterItem}}
+    {{/each}}
+    <a class="refresh" href="">Refresh</a>
+  </div>
+</template>

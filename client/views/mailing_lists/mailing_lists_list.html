@@ -1,0 +1,8 @@
+<template name="mailingListsList">
+  <div class="mailing_lists">
+    {{#each mailingLists}}
+      {{> mailingListItem}}
+    {{/each}}
+    <a class="refresh" href="">Refresh</a>
+  </div>
+</template>

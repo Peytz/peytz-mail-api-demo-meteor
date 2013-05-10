@@ -1,0 +1,2 @@
+Template.newsletterItem.helpers({
+});

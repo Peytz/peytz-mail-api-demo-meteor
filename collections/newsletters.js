@@ -1,0 +1,1 @@
+Newsletters = new Meteor.Collection('newsletters');

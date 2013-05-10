@@ -1,0 +1,9 @@
+<template name="navBar">
+  <div class="navbar-inner">
+    <a class="brand" href="{{mailingListsListPath}}">Peytz Mail API Test Bench</a>
+    <ul class="nav">
+      <li{{#if currentPageMailingLists}} class="active"{{/if}}><a href="{{mailingListsListPath}}">Mailing lists</a></li>
+      <li{{#if currentPageSettings}} class="active"{{/if}}><a href="{{settingsListPath}}">Settings</a></li>
+    </ul>
+  </div>
+</template>

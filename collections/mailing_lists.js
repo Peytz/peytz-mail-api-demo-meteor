@@ -1,0 +1,1 @@
+MailingLists = new Meteor.Collection('mailing_lists');
